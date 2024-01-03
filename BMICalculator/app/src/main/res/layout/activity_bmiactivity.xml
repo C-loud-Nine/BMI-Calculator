@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:background="@drawable/lol"
+    tools:context=".bmiactivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/contentlayout"
+
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:id="@+id/bmidisplay"
+            android:text="22">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your BMI Category Is"
+            android:textStyle="bold"
+            android:id="@+id/bmicategorydispaly"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bmidisplay"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/gotomain"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/contentlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginRight="20dp"
+        android:background="#313A5C"
+        android:fontFamily="monospace"
+        android:text="RECALCULATE YOUR BMI"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+
+</RelativeLayout>
